@@ -3,6 +3,7 @@
 Práctica enfocada en el desarrollo con **JavaScript**, complementado con HTML y CSS para la estructura y presentación visual.  
 Este proyecto busca simular una experiencia interactiva basada en carreras de Fórmula 1, gestionando circuitos, pilotos, vehículos y condiciones de simulación.
 
+![Formula 1](./img/gif/formula1.gif)
 
 
 ## 📑 Tabla de Contenido
