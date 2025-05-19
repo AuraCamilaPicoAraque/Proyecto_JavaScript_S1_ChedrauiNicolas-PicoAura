@@ -23,3 +23,121 @@ video {
     mix-blend-mode: overlay;
     z-index: 0;
 }
+
+.sesion{
+    background-color: #161616;
+    position: relative;
+    top: -1px;
+    height: 950px;
+    margin-left: 1112px;
+}
+
+.sesion .icono{
+margin-left: 100px;
+margin-top: 30px;
+margin-left: 260px;
+}
+
+.sesion h1{
+    margin-top: 50px;
+    color: white;
+    margin-left: 160px;
+}
+
+.sesion .continuar{
+    margin-left: 100px;
+    color: #FFFFFF;
+    opacity: 50%;
+    margin-left: 250px;
+}
+
+.sesion .correo{
+    margin-top: 60px;
+    color: #FFFFFF;
+    margin-left: 100px;
+}
+
+.sesion .contraseña{
+    margin-top: 20px;
+    margin-left: 100px;
+    color: #FFFFFF;
+}
+
+.image-input{
+
+    background-image: url(../img/Rectangle.png);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: left top 8px;
+    background-position: 10px;
+    width: 527px;
+    height: 45px;
+    background-color: #1B1D2A;
+    border: 1px solid, #686868;
+    margin-left: 100px;
+    color: white;
+
+    padding-left: 45px;
+
+}
+
+.image-input-2{
+
+    background-image: url(../img/image.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: left top 8px;
+    background-position: 10px;
+    width: 527px;
+    height: 45px;
+    background-color: #1B1D2A;
+    border: 1px solid, #686868;
+    margin-left: 100px;
+
+    padding-left: 45px;
+    color: white;
+
+}
+
+.iniciar-sesion{
+    background-color: #CF2828;
+    color: #FFFFFF;
+    border-radius: 6px;
+    border: none;
+    margin-top: 60px;
+    margin-left: 100px;
+    width: 527px;
+    height: 59px;
+}
+
+.registrarse{
+    margin-top: 20px;
+    margin-left: 230px;
+    
+}
+
+.registrarse .texto{
+    color: #FFFFFF;
+    opacity: 50%;
+}
+
+.registrarse a {
+    color: #CF2828;  
+    text-decoration: none; 
+     
+  }
+
+.registrar{
+    position: relative;
+    top: -40px;
+    left: 180px;
+    width: 80px;
+}
+
+.linea{
+    border: 1px solid, #424242;
+    position: relative;
+    top: -10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}

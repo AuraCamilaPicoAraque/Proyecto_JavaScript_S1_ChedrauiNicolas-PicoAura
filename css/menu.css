@@ -1,0 +1,123 @@
+
+body{
+background-image: url(../img/formula1.png);
+}
+
+header{
+    background-color: #161616;
+    height: 110px;
+    margin-bottom: 1px;
+}
+
+header img{
+    position: relative;
+    top: -53px;
+}
+
+.linea{
+    border: 1px solid, #424242;
+    margin-left: 860px;
+    margin-right: 900px;
+    transform: rotate(90deg);
+    position: relative;
+    top: -160px;
+    left: -650px;
+}
+.texto-header{
+    margin-right: 1500px;
+    color: white;
+    position: relative;
+    top: -180px;
+    left: 350px;
+}
+
+.carro{
+    position: relative;
+    top: -270px;
+    left: 1400px;
+}
+
+.usuario{
+    position: relative;
+    top: -350px;
+    left: 1600px;
+    width: 169px;
+    height: 73px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+
+}
+
+.usuario .imagen{
+    border-radius: 100px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    border: 1px solid, #424242;
+    opacity: 50%;
+    margin-left: 10px;
+    margin-right: 110px;
+
+}
+
+.foto{
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.nombre{
+    text-align: center;
+    margin-left: 40px;
+    position: relative;
+    top: -23px;
+}
+
+.pilotos{
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    margin-top: 60px;
+}
+
+.circuitos{
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    position: relative;
+    top: -60px;
+    margin-left: 850px;
+}
+
+.vehiculos{
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    position: relative;
+    top: -120px;
+    margin-left: 1550px;
+
+}
+
+.pilotos-cont{
+    position: relative;
+    top: -70px;
+}
+
+.circuitos-cont{
+    position: relative;
+    top: -500px;
+    left: 650px;
+}
+
+.vehiculos-cont{
+    position: relative;
+    top: -1000px;
+    left: 1500px;
+}
+
+
