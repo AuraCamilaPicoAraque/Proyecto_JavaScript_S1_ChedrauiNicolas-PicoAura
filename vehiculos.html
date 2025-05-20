@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/circuitos.css">
+    <link rel="stylesheet" href="./css/vehiculos.css">
     <link rel="icon" href="./img/obj/formula2.png">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200..800&family=Michroma&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -11,9 +11,9 @@
 </head>
 <body style="background-color: black;">
     
-    
     <!--El encabezado del menu donde va el logo,-->
     <!--La parte del usuario, etc-->
+
     <header>
         <div class="header-container">
           <img class="logo" src="./img/iconoF_1.png" alt="Logo F1">
@@ -38,19 +38,8 @@
         </div>
       </header>
 
-      <div id="circuitos-container">
-            <!-- Aquí se cargarán dinámicamente los circuitos desde la API -->
-             <img src="${obtenerBanderaImg(circuito.pais)}" alt="${circuito.pais}" class="bandera">
-
-      </div>
-    
-      
-      <div class="volver-container">
-        <button class="btn-volver">‹ Volver</button>
-      </div>
-
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-<script src="./js/circuitos.js"></script>
+<script src="./js/vehiculos.js"></script>
 </html>
