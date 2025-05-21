@@ -66,33 +66,20 @@ header {
   }
 
 
-#circuitos-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding: 30px;
-}
-
-.circuito-card {
-    background-color: #1a1a1a;
+  .btn-volver {
+    background-color: red;
     color: white;
-    border-radius: 10px;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s;
-}
+    border: none;
+    border-radius: 0.5vw;
 
-.circuito-card:hover {
-    transform: scale(1.05);
-}
+    width: 25vw;
+    height: 3.5vw;
 
-.imagen-circuito {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 10px;
-}
+    font-size: 1.2vw;
+    position: relative;
+    top: 25vw;
+    left: 40vw;
 
+  }
+
+  

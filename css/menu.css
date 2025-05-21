@@ -13,7 +13,6 @@ body {
 header {
     padding: 1rem 2rem;
     background-color: #171717;
-    height: 5vw;
 }
     
 .header-container {
@@ -26,27 +25,27 @@ header {
 }
 
 .logo {
-  width: 7rem;
+  width: 4rem;
   height: auto;
 /*segundo elemento flexible se contraiga tres veces más que el resto:*/
   flex-shrink: 0;
 }
 
 .linea {
-    height: 6rem;
+    height: 3rem;
     width: 1px;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
 .texto-header {
     color: white;
-    font-size: clamp(0.8rem, 3vw, 1.2rem);
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
     margin: 0;
     flex-grow: 1;
 }
 
 .carro {
-    height: 5rem;
+    height: 3rem;
     width: auto;
     object-fit: contain;
     flex-shrink: 0;
@@ -63,21 +62,18 @@ header {
 }
 
 .foto {
-    width: 3rem;
-    height: 3rem;
-    border: 0.1vw solid #17171725;
-    border-radius: 2vw;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .nombre {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     color: black;
 }
 
 
-
-/* Main content with carousel */
+/* CARRUSEL*/
 .swiper-container {
     width: 100%;
     max-width:max-content;

@@ -58,3 +58,19 @@ header {
     width: 24px;
     height: 24px;
   }
+
+    .btn-volver {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 0.5vw;
+
+    width: 25vw;
+    height: 3.5vw;
+
+    font-size: 1.2vw;
+    position: relative;
+    top: 30vw;
+    left: 40vw;
+
+  }
