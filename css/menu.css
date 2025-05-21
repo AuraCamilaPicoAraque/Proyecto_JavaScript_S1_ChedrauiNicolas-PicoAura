@@ -1,115 +1,170 @@
-
-body{
-background-image: url(../img/formula1.png);
+body {
+    background-color: black;
+    background-image: url(../img/formula1.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Michroma", sans-serif;
 }
 
+/* Header estilos */
 header {
-    background-color: #151515; /* Fondo oscuro */
-    padding: 10px 20px;
-  }
-  
-  .header-container {
+    padding: 1rem 2rem;
+    background-color: #171717;
+    height: 5vw;
+}
+    
+.header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 1.5rem;
+    width: 100%;
     max-width: 100%;
-  }
-  
-  .logo {
-    width: 60px;
-    height: auto;
-  }
-  
-  .linea {
-    height: 50px;
+}
+
+.logo {
+  width: 7rem;
+  height: auto;
+/*segundo elemento flexible se contraiga tres veces más que el resto:*/
+  flex-shrink: 0;
+}
+
+.linea {
+    height: 6rem;
     width: 1px;
-    background-color: #ffffff30;
-  }
-  
-  .texto-header {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.texto-header {
     color: white;
-    font-size: 18px;
+    font-size: clamp(0.8rem, 3vw, 1.2rem);
     margin: 0;
     flex-grow: 1;
-    text-align: center;
-  }
-  
-  .carro {
-    height: 50px;
+}
+
+.carro {
+    height: 5rem;
+    width: auto;
     object-fit: contain;
-  }
-  
-  .usuario {
+    flex-shrink: 0;
+}
+
+.usuario {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.6rem;
     background-color: #d9d9d9;
-    padding: 6px 12px;
-    border-radius: 8px;
-  }
-  
-  .foto {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .nombre {
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+}
+
+.foto {
+    width: 3rem;
+    height: 3rem;
+    border: 0.1vw solid #17171725;
+    border-radius: 2vw;
+}
+
+.nombre {
     margin: 0;
-    font-size: 16px;
+    font-size: 1.5rem;
     color: black;
-  }
+}
 
-.pilotos{
-    margin-right: 1600px;
-    font-family: "Michroma", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+
+
+/* Main content with carousel */
+.swiper-container {
+    width: 100%;
+    max-width:max-content;
+    height: 30vw;
+    margin: 5vw auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Estilos para cada slide */
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color: white;
-    margin-top: 60px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.circuitos{
-    margin-right: 700px;
-    font-family: "Michroma", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-    position: relative;
-    top: -60px;
-    margin-left: 850px;
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 2rem;
 }
 
-.vehiculos{
-    margin-right: 30px;
-    font-family: "Michroma", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-    position: relative;
-    top: -120px;
-    margin-left: 1550px;
-
+/* Estilos para los puntos de paginación */
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    opacity: 1;
+    margin: 0 6px !important;
+}
+.swiper-pagination-bullet-active {
+    background-color: #ffffff; 
 }
 
-.pilotos-cont{
-    margin-right: 1500px;
-    position: relative;
-    top: -70px;
-}
-
-.circuitos-cont{
-    margin-right: 1200px;
-    position: relative;
-    top: -500px;
-    left: 650px;
-}
-
-.vehiculos-cont{    
-    margin-right: 1500px;
-    position: relative;
-    top: -1000px;
-    left: 1500px;
+.swiper-button-next,
+.swiper-button-prev {
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Efecto hover para las flechas */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* Estilos para el título de cada slide */
+.swiper-slide h2 {
+    font-family: 'Michroma', sans-serif;
+    color: #ffffff;
+    margin-bottom: 2vw;
+    font-size: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .linea, .carro {
+        display: none;
+    }
+    
+    .texto-header {
+        width: 100%;
+        order: 3;
+        margin-top: 1rem;
+    }
+}

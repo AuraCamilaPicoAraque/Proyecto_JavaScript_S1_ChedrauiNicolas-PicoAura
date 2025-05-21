@@ -85,7 +85,7 @@ video {
     width: 25vw;
     height: 2vw;
     border-radius: 0.5vw;
-
+    font-size: 1vw;
 }
 
 .nombre {
@@ -102,6 +102,8 @@ video {
     height: 2vw;
     border-radius: 0.5vw;
     padding-left: 1vw;
+        font-size: 1vw;
+
 }
 
 .apellidos {
@@ -117,6 +119,8 @@ video {
     width: 47.135vw;
     height: 2vw;
     border-radius: 0.5vw;
+        font-size: 1vw;
+
 
 }
 
@@ -132,8 +136,7 @@ video {
     height: 2vw;
     border-radius: 0.5vw;
     padding-left: 1vw;
-
-
+        font-size: 1vw;
 }
 
 .opciones-container {
@@ -141,6 +144,7 @@ video {
     grid-template-columns: 1fr 1fr;
     gap: 0.417vw 1.25vw;
     max-width: 26.042vw;
+    font-size: 1vw;
 
 }
 
@@ -157,6 +161,8 @@ video {
     height: 2vw;
     border-radius: 0.5vw;
     padding-left: 1vw;
+        font-size: 1vw;
+
 
 
 }
@@ -173,25 +179,12 @@ video {
     height: 2vw;
     border-radius: 0.5vw;
     padding-left: 1vw;
+        font-size: 1vw;
 
-
-}
-
-.email-verificar {
-    color: white;
-    margin-left: 2.604vw;
-    margin-top: 1.042vw;
-}
-
-.email-verificar-input {
-    margin-left: 2.604vw;
-    width: 47.135vw;
-    height: 2vw;
-    border-radius: 0.5vw;
-    padding-left: 1vw;
 
 
 }
+
 
 .contraseña {
     color: white;
@@ -206,6 +199,7 @@ video {
     border-radius: 0.5vw;
     padding-left: 1vw;
 
+        font-size: 1vw;
 
 }
 
@@ -215,6 +209,8 @@ video {
     color: white;
     font-size: 0.938vw;
     margin-bottom: 0.625vw;
+            font-size: 1vw;
+
 }
 
 .requisitos-container {
@@ -231,6 +227,7 @@ video {
     padding: 0;
     font-size: 0.833vw;
     line-height: 1.4;
+    
 
 }
 
@@ -241,12 +238,15 @@ video {
 
 #cbox {
     margin-left: 2.604vw;
+    margin-top: 1vw;
 }
 
 .acuerdo {
-    margin-top: 2.083vw;
+    margin-top: 3vw;
     color: white;
-    margin-left: 2.604vw;
+    margin-left: 2.5vw;
+            font-size: 1vw;
+
 }
 
 a {
@@ -259,9 +259,11 @@ a {
     color: #FFFFFF;
     border-radius: 0.313vw;
     border: none;
-    margin-top: 1.563vw;
+    margin-top: 2.5vw;
     margin-left: 13.021vw;
     width: 27.448vw;
-    height: 2vw;
+    height: 2.5vw;
     margin-bottom: 2vw;
+            font-size: 1vw;
+
 }
