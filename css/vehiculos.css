@@ -86,7 +86,7 @@ header {
 .swiper-container {
   width: 90%;
   height: 550px;
-  margin: 0 auto;
+  margin: 10vw auto;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);

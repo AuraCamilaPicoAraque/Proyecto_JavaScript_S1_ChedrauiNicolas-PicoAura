@@ -1,83 +1,86 @@
-body{
-    background-image: url(../img/formula1.png);
+body {
+  background-image: url(../img/formula1.png);
 }
-    
+
 header {
-    background-color: #151515; /* color de fondo oscuro */
-    padding: 10px 20px;
-  }
-  
-  .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 100%;
-    gap: 20px;
-  }
-  
-  .logo {
-    width: 60px;
-    height: auto;
-  }
-  
-  .linea {
-    height: 50px;
-    width: 1px;
-    background-color: #ffffff30; /* línea sutil */
-  }
-  
-  .menu {
-    display: flex;
-    gap: 40px;
-    flex-grow: 1;
-    justify-content: center;
-  }
-  
-  .menu p {
-    color: white;
-    font-size: 18px;
-    margin: 0;
-    cursor: pointer;
-  }
-  
-  .carro {
-    height: 50px;
-    object-fit: contain;
-  }
-  
-  .usuario {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background-color: #d9d9d9;
-    padding: 6px 12px;
-    border-radius: 8px;
-  }
-  
-  .foto {
-    width: 24px;
-    height: 24px;
-  }
+  background-color: #151515;
+  /* color de fondo oscuro */
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: 20px;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+.linea {
+  height: 50px;
+  width: 1px;
+  background-color: #ffffff30;
+  /* línea sutil */
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.menu p {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.carro {
+  height: 50px;
+  object-fit: contain;
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #d9d9d9;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.foto {
+  width: 24px;
+  height: 24px;
+}
 
 #carrusel-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 8vw;
   overflow: hidden;
   width: 100%;
-  max-width: 1200px;
+  max-width: 80vw;
   margin: 80px auto 0;
   position: relative;
   z-index: 1;
-  min-height: 420px;
+  min-height: 40vw;
 }
 
 .piloto-card {
   background-color: #ffffff;
   border-radius: 16px;
   padding: 24px 20px;
-  width: 280px;              /* Aumentado desde ~220px */
+  width: 15vw;
+  /* Aumentado desde ~220px */
   height: auto;
   text-align: center;
   opacity: 0.7;
@@ -89,9 +92,11 @@ header {
 }
 
 .activo {
-  transform: scale(1.25);   /* Aumentado para agrandar más */
+  transform: scale(1.5);
+  /* Aumentado para agrandar más */
   opacity: 1;
   z-index: 2;
+
 }
 
 .piloto-card img {
@@ -99,37 +104,18 @@ header {
   height: auto;
   border-radius: 10px;
   border: 1px solid #333;
-  margin-top: 12px;
+  margin-top: -1vw;
 }
 
 .equipo {
-  font-size: 0.75em;
-  background-color: #f0f0f0;
-  color: #333;
+  font-size: 0.7vw;
+  background-color: black;
+  color: #ffffff;
   display: inline-block;
+  position: relative;
+  top: -0.5vw;
   padding: 2px 8px;
   border-radius: 6px;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.nombre {
-  font-size: 1.2em;
-  font-weight: 600;
-  color: #000;
-}
-
-.pais {
-  margin-top: 4px;
-  font-size: 0.9em;
-  color: #444;
-}
-
-.puntos {
-  font-size: 1.6em;
-  font-weight: bold;
-  margin-top: 8px;
-  color: #111;
 }
 
 #controles {
@@ -164,7 +150,7 @@ header {
   transform: scale(1.1);
 }
 
-.volver-container{
+.volver-container {
   position: relative;
   top: -500px;
   left: -40px;
@@ -185,4 +171,43 @@ header {
   top: 30vw;
   left: 40vw;
 
+}
+
+/* O solo para las banderas */
+.bandera {
+  width: 3.4vw !important;
+  border: none !important;
+  border-radius: 0 !important;
+  position: relative;
+  left: 4vw;
+  top: -3vw;
+  box-shadow: -0.2vw 0.2vw 1vh rgba(0, 0, 0, 0.445);
+}
+
+.lineapilotos {
+  height: 0.1vw;
+  width: 12.8vw;
+  position: absolute;
+  top: 3vw;
+  background-color: #000000fd;
+}
+
+
+h3 {
+  margin-top: 0.5vw !important;
+  margin-bottom: 1vw !important;
+  position: relative;
+  left: 1vw;
+  width: 5vw;
+  text-align: left;
+  font-size: 1.5vw !important;
+}
+
+
+.lineanombre {
+  height: 3.5vw;
+  width: 0.3vw;
+  position: absolute;
+  top: 4vw;
+  background-color: #000000fd;
 }

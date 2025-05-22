@@ -27,21 +27,27 @@ function renderCarrusel() {
       if (idx === 1) card.classList.add('activo');
 
       card.innerHTML = `
-        <h3>${piloto.nombre}</h3>
         <p class="equipo">${piloto.equipo}</p>
-        <p class="rol">${piloto.rol}</p>
+        <div class="lineanombre"></div>
+        <h3>${piloto.nombre}</h3>
+        <div class="lineapilotos"></div>
+        <img class="bandera" src="${piloto.bandera}" />
         <img src="${piloto.imagen}">
       `;
-
+      
       carrusel.appendChild(card);
     });
+    
+setTimeout(() => {
+    document.querySelectorAll(".bandera").forEach(
+      bandera => bandera.style.width = "2.5vw"
+    );
+  }, 10); // Pequeño delay para asegurar que el DOM esté listo
 
     // Reiniciamos la animación
     carrusel.style.transform = 'translateX(0)';
   }, 100);
 }
-
-
 btnAnterior.addEventListener('click', () => {
   if (pilotos.length === 0) return;
   indiceCentral = (indiceCentral - 1 + pilotos.length) % pilotos.length;
