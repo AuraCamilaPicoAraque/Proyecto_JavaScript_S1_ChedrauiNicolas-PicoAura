@@ -1,85 +1,160 @@
-body{
+body {
     background-image: url(../img/formula1.png);
 }
-    
+
 header {
-    background-color: #151515; /* color de fondo oscuro */
+    background-color: #151515;
     padding: 10px 20px;
-  }
-  
-  .header-container {
+}
+
+.header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 100%;
     gap: 20px;
-  }
-  
-  .logo {
+}
+
+.logo {
     width: 60px;
     height: auto;
-  }
-  
-  .linea {
+}
+
+.linea {
     height: 50px;
     width: 1px;
-    background-color: #ffffff30; /* línea sutil */
-  }
-  
-  .menu {
+    background-color: #ffffff30;
+}
+
+.menu {
     display: flex;
     gap: 40px;
     flex-grow: 1;
     justify-content: center;
-  }
-  
-  .menu p {
+}
+
+.menu p {
     color: white;
     font-size: 18px;
     margin: 0;
     cursor: pointer;
-  }
-  
-  .carro {
+}
+
+.carro {
     height: 50px;
     object-fit: contain;
-  }
-  
-  .usuario {
+}
+
+.usuario {
     display: flex;
     align-items: center;
     gap: 10px;
     background-color: #d9d9d9;
     padding: 6px 12px;
     border-radius: 8px;
-  }
-  
-  .foto {
+}
+
+.foto {
     width: 24px;
     height: 24px;
-  }
-  
-  .nombre {
+}
+
+.nombre {
     margin: 0;
     font-size: 16px;
     color: black;
-  }
+}
 
+/* CARRUSEL */
 
-  .btn-volver {
+#carrusel-circuitos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    min-height: 500px;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+    margin-top: 40px;
+}
+
+.circuito-card {
+    width: 250px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.5s ease, opacity 0.5s;
+    flex-shrink: 0;
+    opacity: 0.5;
+    transform: scale(0.9);
+    box-shadow: 0 0 10px #00000050;
+}
+
+.circuito-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.circuito-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.circuito-card.activa {
+    transform: scale(1.1);
+    opacity: 1;
+    z-index: 2;
+}
+
+#controles-circuitos {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: 90%;
+}
+
+.btn-carrusel {
+    background-color: red;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-carrusel:hover {
+    background-color: darkred;
+}
+
+/* BOTÓN VOLVER */
+
+.volver-container {
+    position: relative;
+    left: 680px;
+    top: 100px;
+}
+
+.btn-volver {
     background-color: red;
     color: white;
     border: none;
     border-radius: 0.5vw;
-
     width: 25vw;
     height: 3.5vw;
-
     font-size: 1.2vw;
     position: relative;
     top: -100px;
     left: 40px;
+    transition: background-color 0.3s;
+}
 
-  }
-
-  
+.btn-volver:hover {
+    background-color: darkred;
+}
