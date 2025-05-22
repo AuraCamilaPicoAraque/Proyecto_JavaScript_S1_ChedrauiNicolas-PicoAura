@@ -152,7 +152,6 @@ video {
     color: white;
     margin-left: 2.604vw;
     margin-top: 1.042vw;
-
 }
 
 #pais {
@@ -162,9 +161,6 @@ video {
     border-radius: 0.5vw;
     padding-left: 1vw;
         font-size: 1vw;
-
-
-
 }
 
 .email {
@@ -180,9 +176,6 @@ video {
     border-radius: 0.5vw;
     padding-left: 1vw;
         font-size: 1vw;
-
-
-
 }
 
 
@@ -200,7 +193,6 @@ video {
     padding-left: 1vw;
 
         font-size: 1vw;
-
 }
 
 .info {
@@ -210,7 +202,6 @@ video {
     font-size: 0.938vw;
     margin-bottom: 0.625vw;
             font-size: 1vw;
-
 }
 
 .requisitos-container {
@@ -227,18 +218,18 @@ video {
     padding: 0;
     font-size: 0.833vw;
     line-height: 1.4;
-    
-
 }
 
 .check-container {
     display: flex;
-    max-width: 41.667vw;
+    max-width: 50vw;
 }
 
 #cbox {
     margin-left: 2.604vw;
     margin-top: 1vw;
+    width: 3vw;
+    border-radius: 10vw;
 }
 
 .acuerdo {
