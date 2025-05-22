@@ -30,6 +30,7 @@ function renderCarrusel() {
         <h3>${piloto.nombre}</h3>
         <p class="equipo">${piloto.equipo}</p>
         <p class="rol">${piloto.rol}</p>
+        <img src="${piloto.imagen}">
       `;
 
       carrusel.appendChild(card);
