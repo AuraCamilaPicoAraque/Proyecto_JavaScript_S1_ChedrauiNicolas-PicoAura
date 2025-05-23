@@ -10,12 +10,13 @@ Este proyecto busca simular una experiencia interactiva basada en carreras de F�
 
 | Índice | Título | Información |
 |--------|--------|-------------|
-| 1 | [index.html](https://github.com/AuraCamilaPicoAraque/Proyecto_HTML_S1_DiazVladimir-PicoAura/blob/master/index.html "index.html") | Código principal del sitio |
-| 2 | [index](https://github.com/AuraCamilaPicoAraque/Proyecto_HTML_S1_DiazVladimir-PicoAura/tree/master/index) | Páginas secundarias del sitio |
-| 3 | [style](https://github.com/AuraCamilaPicoAraque/Proyecto_HTML_S1_DiazVladimir-PicoAura/tree/master/style) | Estilos CSS personalizados |
-| 4 | [img](https://github.com/AuraCamilaPicoAraque/Proyecto_HTML_S1_DiazVladimir-PicoAura/tree/master/img) | Imágenes utilizadas |
-| 5 | [font](https://github.com/AuraCamilaPicoAraque/Proyecto_HTML_S1_DiazVladimir-PicoAura/tree/master/font) | Fuentes utilizadas |
-| 6 | [objet](https://github.com/AuraCamilaPicoAraque/Proyecto_HTML_S1_DiazVladimir-PicoAura/tree/master/objet) | Objetos gráficos de la interfaz |
+| 1 | [index.html](https://github.com/AuraCamilaPicoAraque/Proyecto_JavaScript_S1_ChedrauiNicolas-PicoAura/blob/master/index.html "index.html") | Código principal del sitio |
+| 4 | [img](https://github.com/AuraCamilaPicoAraque/Proyecto_JavaScript_S1_ChedrauiNicolas-PicoAura/tree/master/img "img") | Imágenes utilizadas |
+| 5 | [font](https://github.com/AuraCamilaPicoAraque/Proyecto_JavaScript_S1_ChedrauiNicolas-PicoAura/tree/master/font "font")| Fuentes utilizadas |
+| 6 | [objet](https://github.com/AuraCamilaPicoAraque/Proyecto_JavaScript_S1_ChedrauiNicolas-PicoAura/tree/master/img/obj) | Objetos gráficos de la interfaz |
+| 2 | [index](https://github.com/AuraCamilaPicoAraque/Proyecto_JavaScript_S1_ChedrauiNicolas-PicoAura/tree/master/index "index") | Carpeta de los index |
+| 3 | [css](https://github.com/AuraCamilaPicoAraque/Proyecto_JavaScript_S1_ChedrauiNicolas-PicoAura/tree/master/css "css") | Estilos CSS personalizados |
+  
 
 
 ### 🔗 Recursos Complementarios del Proyecto JavaScript
@@ -31,21 +32,34 @@ Este proyecto busca simular una experiencia interactiva basada en carreras de F�
 
 # ESTRUCTURA
 
-📂 Proyecto_HTML_CSS  
-├── 📄 index.html → Página principal del sitio  
-├── 📂 index/ → Contiene las páginas secundarias del sistema  
-│   ├── añadir.html → Página para agregar elementos  
-│   ├── eliminar.html → Página para eliminar registros  
-│   ├── reportar.html → Página para generar reportes  
-│   ├── ayuda.html → Sección de soporte e instrucciones  
-├── 📂 style/ → Archivos de estilos CSS personalizados  
-│   ├── style.css → Estilo general del sitio  
-│   ├── ayuda.css → Estilos específicos de la sección de ayuda  
-│   ├── borrar.css → Estilos aplicados en la página de eliminación  
-│   ├── reportar.css → Estilos para el formulario de reportes  
-├── 📂 img/ → Imágenes generales del sitio  
-├── 📂 objet/ → Imágenes de objetos usados en la interfaz (vehículos, íconos, etc.)  
+📂 Proyecto_JavaScript_S1_ChedrauiNicolas-PicoAura       
+├── 📂 css/ → Archivos de estilos CSS personalizados   
+│   ├── circuitos.css → Estilo genral del apartado de las pistas de carrera  
+│   ├── menu.css → Estilos específicos de la sección de menu  
+│   ├── pilotos.css → Estilos aplicados en la página de pilotos  
+│   ├── registrar.css → Estilos para el formulario de registro
+│   ├── style.css → Estilo general del sitio   
+│   ├── vehiculos.css → Estilos para el apartado de vehiculos
 ├── 📂 font/ → Fuentes personalizadas utilizadas para el diseño tipográfico  
+├── 📂 img/ → Imágenes generales del sitio
+│   ├── 📂 gif/ → gif utilizado para el fondo de inicio de sesión
+│   ├── 📂 objet/ → Imágenes de objetos usados en la interfaz (vehículos, íconos, etc.)
+├── 📂 index/ → Contiene las páginas secundarias del sistema  
+│   ├── circuitos.html → Página para visualizar, crear y eliminar las pistas de carrera  
+│   ├── manu.html → Página encargada de la interfaz principal y opciones disponibles  
+│   ├── pilotos.html → Página para generar, visualizar y eliminar pilotos  
+│   ├── registrar.html → Sección diseñada para registrar a nuevos usuarios
+│   ├── vehiculos.html → Página para generar, visualizar y eliminar los vehiculos de formula 1
+├── 📂 js/ → Archivos JavaScript utilizados   
+│   ├── circuitos.js → JavaScript genral del apartado de las pistas de carrera  
+│   ├── menu.js → JavaScript específicos de la sección de menu  
+│   ├── pilotos.js → JavaScript aplicados en la página de pilotos  
+│   ├── registrar.js → JavaScript para el formulario de registro
+│   ├── style.js → JavaScript general del sitio   
+│   ├── vehiculos.js → JavaScript para el apartado de vehiculos
+├── 📄 index.html → Página principal del sitio  
+   
+  
 
 
 
@@ -108,7 +122,7 @@ font/ → Contiene las fuentes personalizadas para los textos.
 
 este proyecto se ejecutara mediante el link web de la pagina.
 
-[aqui](https://github.com/AuraCamilaPicoAraque/Proyecto_HTML_S1_DiazVladimir-PicoAura)
+[aqui](https://github.com/AuraCamilaPicoAraque/Proyecto_JavaScript_S1_ChedrauiNicolas-PicoAura)
   
 # Link de la maquetación de la pagina web.
 
