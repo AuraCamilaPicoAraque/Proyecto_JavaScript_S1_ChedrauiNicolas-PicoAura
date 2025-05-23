@@ -1,65 +1,211 @@
+:root {
+  --rojo-f1: #e10600;
+  --rojo-oscuro: #9b0400;
+  --gris-oscuro: #151515;
+  --gris-claro: #d9d9d9;
+  --blanco: #ffffff;
+}
+
 body {
   background-image: url(../img/formula1.png);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1vw;
 }
 
 header {
-  background-color: #151515;
-  /* color de fondo oscuro */
-  padding: 10px 20px;
+  background-color: var(--gris-oscuro);
+  padding: 1vw 3vw;
 }
 
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 100%;
-  gap: 20px;
+  max-width: 1800px;
+  margin: 0 auto;
+  gap: 1.5vw;
+  flex-wrap: wrap;
 }
 
 .logo {
-  width: 60px;
+  width: 4vw;
+  min-width: 40px;
+  max-width: 80px;
   height: auto;
+  transition: transform 0.3s;
 }
+
+.logo:hover {
+  transform: scale(1.5);
+}
+
 
 .linea {
   height: 50px;
   width: 1px;
   background-color: #ffffff30;
-  /* línea sutil */
+
 }
 
 .menu {
   display: flex;
-  gap: 40px;
+  gap: 2vw;
   flex-grow: 1;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  text-decoration: none;
 }
 
 .menu p {
-  color: white;
-  font-size: 18px;
+  color: var(--blanco);
+  font-size: 1.1vw;
   margin: 0;
   cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s;
+  white-space: nowrap;
+
+}
+
+.menu p:hover {
+  color: var(--rojo-f1);
 }
 
 .carro {
-  height: 50px;
+  height: 3vw;
+  min-height: 30px;
+  max-height: 60px;
   object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.carro:hover {
+  transform: scale(1.1);
 }
 
 .usuario {
   display: flex;
   align-items: center;
-  gap: 10px;
-  background-color: #d9d9d9;
-  padding: 6px 12px;
-  border-radius: 8px;
+  gap: 0.8vw;
+  background-color: var(--gris-claro);
+  padding: 0.5vw 1vw;
+  border-radius: 0.5vw;
+  transition: transform 0.3s;
+  cursor: pointer;
+
+}
+
+.usuario:hover {
+  transform: scale(1.05);
 }
 
 .foto {
-  width: 24px;
-  height: 24px;
+  width: 1.8vw;
+  min-width: 18px;
+  max-width: 30px;
+  height: 1.8vw;
+  min-height: 18px;
+  max-height: 30px;
+  cursor: pointer;
+
 }
+
+.nombre {
+  margin: 0;
+  font-size: 1vw;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+
+/* USUARIO*/
+/* Estilos del menú desplegable */
+.dropdown-menu-usuario {
+  display: none;
+  position: absolute;
+  top: calc(100% + 1vw);
+  right: 0;
+  background-color: var(--gris-oscuro);
+  min-width: 15vw;
+  height: 10vw;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  border: 1px solid var(--gris-intermedio);
+  z-index: 1000;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.dropdown-menu-usuario.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Encabezado del menú */
+.dropdown-header {
+  padding: 16px 20px;
+  background-color: var(--rojo-f1);
+  color: white !important;
+  font-weight: 600;
+  font-size: 1.2rem !important;
+  display: flex;
+  align-items: center;
+}
+
+/* Items del menú */
+.dropdown-item {
+  padding: 14px 20px;
+  color: var(--blanco) !important;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: all 0.25s ease;
+  border-bottom: 1px solid var(--gris-intermedio);
+  font-size: 1.2rem !important;
+}
+
+.dropdown-item:hover {
+  background-color: var(--gris-intermedio);
+  padding-left: 25px;
+  color: var(--blanco);
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+/* Iconos */
+.dropdown-item i {
+  width: 24px;
+  text-align: center;
+  color: var(--rojo-f1);
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.dropdown-item:hover i {
+  color: var(--blanco);
+}
+
+/* Separador especial antes del último item */
+.dropdown-item.logout {
+  border-top: 1px solid var(--gris-intermedio);
+  margin-top: 4px;
+}
+
+
+
 
 #carrusel-container {
   display: flex;

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/pilotos.css">
   <link rel="icon" href="../img/obj/formula2.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200..800&family=Michroma&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
@@ -20,24 +21,38 @@
 
   <header>
     <div class="header-container">
-      <img class="logo" src="../img/iconoF_1.png" alt="Logo F1">
-
+      <img class="logo" src="../img/iconoF_1.png" alt="Logo F1" />
       <div class="linea"></div>
-
       <nav class="menu">
-        <p>Circuitos</p>
-        <p>Vehículos</p>
-        <p>Pilotos</p>
-        <p>Equipos</p>
+        <a href="./circuitos.html"><p>Circuitos</p></a>
+        <a href="./vehiculos.html"><p>Vehículos</p></a> 
+        <a href="./pilotos.html"><p>Pilotos</p></a>
       </nav>
-
-      <img class="carro" src="../img/formula1-removebg-preview 1.png" alt="Carro F1">
-
-      <div class="usuario">
+      <img class="carro" src="../img/formula1-removebg-preview 1.png" alt="Carro F1" />
+      <!-- APARTADO-->
+      <div class="usuario" id="usuarioDropdown">
         <div class="imagen">
-          <img class="foto" src="../img/usuario 1.png" alt="Usuario">
+          <img class="foto" src="../img/usuario 1.png" alt="Usuario" />
         </div>
         <p class="nombre">Usuario</p>
+        <!-- Menú desplegable -->
+        <div class="dropdown-menu-usuario" id="dropdownMenu">
+            <div class="dropdown-header">
+                <i class="fas fa-user-circle"></i> Mi Cuenta
+            </div>
+            <a href="" class="dropdown-item">
+                <i class="fas fa-user"></i> Ver perfil
+            </a>
+            <a href="" class="dropdown-item">
+                <i class="fas fa-cog"></i> Configuración
+            </a>
+            <a href="" class="dropdown-item">
+                <i class="fas fa-bell"></i> Notificaciones
+            </a>
+            <a href="" class="dropdown-item">
+                <i class="fas fa-sign-out-alt"></i> Cerrar sesión
+            </a>
+        </div>
       </div>
     </div>
   </header>

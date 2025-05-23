@@ -1,42 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../css/circuitos.css" />
   <link rel="icon" href="../img/obj/formula2.png" />
+  <!-- Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200..800&family=Michroma&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <title>SI Formula1 - Circuitos</title>
 </head>
+
 <body style="background-color: black;">
-  
+
   <!-- Encabezado -->
   <header>
     <div class="header-container">
       <img class="logo" src="../img/iconoF_1.png" alt="Logo F1" />
       <div class="linea"></div>
       <nav class="menu">
-        <p>Circuitos</p>
-        <p>Vehículos</p>
-        <p>Pilotos</p>
-        <p>Equipos</p>
+        <a href="./circuitos.html"><p>Circuitos</p></a>
+        <a href="./vehiculos.html"><p>Vehículos</p></a> 
+        <a href="./pilotos.html"><p>Pilotos</p></a>
       </nav>
       <img class="carro" src="../img/formula1-removebg-preview 1.png" alt="Carro F1" />
-      <div class="usuario">
+      <!-- APARTADO-->
+      <div class="usuario" id="usuarioDropdown">
         <div class="imagen">
           <img class="foto" src="../img/usuario 1.png" alt="Usuario" />
         </div>
         <p class="nombre">Usuario</p>
+        <!-- Menú desplegable -->
+        <div class="dropdown-menu-usuario" id="dropdownMenu">
+            <div class="dropdown-header">
+                <i class="fas fa-user-circle"></i> Mi Cuenta
+            </div>
+            <a href="" class="dropdown-item">
+                <i class="fas fa-user"></i> Ver perfil
+            </a>
+            <a href="" class="dropdown-item">
+                <i class="fas fa-cog"></i> Configuración
+            </a>
+            <a href="" class="dropdown-item">
+                <i class="fas fa-bell"></i> Notificaciones
+            </a>
+            <a href="" class="dropdown-item">
+                <i class="fas fa-sign-out-alt"></i> Cerrar sesión
+            </a>
+        </div>
       </div>
     </div>
   </header>
+
+
+
+<!-- -------------------------------------------------------------------------------- -->
 
   <!-- Contenedor del carrusel -->
   <div class="circuitos-wrapper">
     <div id="carrusel-circuitos-container">
       <!-- Las tarjetas se insertan dinámicamente aquí -->
     </div>
+
 
     <div id="controles-circuitos">
       <button class="btn-carrusel" id="circuito-anterior">←</button>
@@ -47,6 +74,73 @@
   <!-- Botón volver -->
   <div class="volver-container">
     <a href="../index/menu.html"><button class="btn-volver">‹ Volver</button></a>
+    <button class="btn_agregar"> + agregar </button>
+  </div>
+
+  <!-- Modal para agregar nuevo circuito -->
+  <div id="modal-agregar" class="modal-circuito">
+    <div class="modal-contenido">
+      <span class="cerrar-modal">&times;</span>
+      <h2>Agregar Nuevo Circuito</h2>
+      <img src="../img/iconoF_1.png" class="logo1">
+      <div class="lineaxd"></div>
+
+      <form id="formulario-agregar">
+        <div class="form-group">
+          <label for="nombre-circuito">Nombre:</label>
+          <input type="text" id="nombre-circuito" placeholder="Nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="imagen-circuito">URL Imagen:</label>
+          <input type="text" id="imagen-circuito" placeholder="URL Imagen" required>
+        </div>
+        <div class="form-group">
+          <label for="bandera-circuito">URL Bandera:</label>
+          <input type="text" id="bandera-circuito" placeholder="URL Bandera" required>
+        </div>
+        <div class="form-group">
+          <label for="pais-circuito">País:</label>
+          <input type="text" id="pais-circuito" placeholder="País" required>
+        </div>
+        <div class="form-group">
+          <label for="longitud-circuito">Longitud (km):</label>
+          <input type="number" id="longitud-circuito" placeholder="Longitud" step="0.1" required>
+        </div>
+        <div class="form-group">
+          <label for="vueltas-circuito">Número de curvas:</label>
+          <input type="number" id="vueltas-circuito" placeholder="Número de curvas" required>
+        </div>
+        <div class="form-group">
+          <label for="descripcion-circuito">Descripción:</label>
+          <textarea id="descripcion-circuito" placeholder="Descripción" required></textarea>
+        </div>
+        <div class="botones-modal">
+          <button type="button" class="btn-cancelar">Cancelar</button>
+          <button type="submit" class="btn-aceptar">Aceptar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- Modal para mostrar detalles -->
+  <div id="detalle-modal" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar-modal">&times;</span>
+      <h2 id="detalle-nombre"></h2>
+      <img id="detalle-imagen" src="" alt="" class="imagen-detalle">
+      <div class="detalle-info">
+        <p><strong>País:</strong> <span id="detalle-pais"></span></p>
+        <p><strong>Longitud:</strong> <span id="detalle-longitud"></span> km</p>
+        <p><strong>Vueltas:</strong> <span id="detalle-vueltas"></span></p>
+        <p><strong>Distancia Total:</strong> <span id="detalle-distancia"></span> km</p>
+        <p><strong>Récord de Vuelta:</strong> <span id="detalle-record"></span></p>
+      </div>
+      <div class="detalle-botones">
+        <button id="btn-editar" class="btn-editar">Editar</button>
+        <button id="btn-eliminar" class="btn-eliminar">Eliminar</button>
+      </div>
+    </div>
   </div>
 
   <!-- Scripts -->
@@ -54,4 +148,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
   <script src="../js/circuitos.js"></script>
 </body>
+
 </html>

@@ -92,3 +92,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // Iniciar la carga de vehículos
     loadVehicles();
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const usuarioDropdown = document.getElementById('usuarioDropdown');
+  const dropdownMenu = document.getElementById('dropdownMenu');
+
+  // Mostrar/ocultar menú al hacer clic
+  usuarioDropdown.addEventListener('click', function (e) {
+    e.stopPropagation();
+    dropdownMenu.classList.toggle('show');
+  });
+
+  // Ocultar menú al hacer clic fuera
+  document.addEventListener('click', function () {
+    dropdownMenu.classList.remove('show');
+  });
+});

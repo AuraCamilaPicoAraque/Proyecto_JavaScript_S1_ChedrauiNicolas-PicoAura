@@ -70,3 +70,22 @@ fetch('https://681bd7ee6ae7c794cf6ff13d.mockapi.io/ProyectosJavaScript')
     console.error('Error al obtener pilotos:', err);
     carrusel.innerHTML = '<p style="color:red;">No se pudo cargar la lista de pilotos.</p>';
   });
+
+
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+  const usuarioDropdown = document.getElementById('usuarioDropdown');
+  const dropdownMenu = document.getElementById('dropdownMenu');
+
+  // Mostrar/ocultar menú al hacer clic
+  usuarioDropdown.addEventListener('click', function (e) {
+    e.stopPropagation();
+    dropdownMenu.classList.toggle('show');
+  });
+
+  // Ocultar menú al hacer clic fuera
+  document.addEventListener('click', function () {
+    dropdownMenu.classList.remove('show');
+  });
+});
